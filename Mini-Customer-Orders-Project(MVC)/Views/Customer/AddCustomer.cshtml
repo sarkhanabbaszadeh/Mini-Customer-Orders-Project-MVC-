@@ -1,0 +1,17 @@
+﻿@model Mini_Customer_Orders_Project_MVC_.Entity.Customer
+@{
+    ViewData["Title"] = "AddCustomer";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Yeni Müştəri səhifəsi</h1>
+
+<form method="post">
+    @Html.Label("Müştəri adı")
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"})
+    <br />
+    @Html.Label("Şəhər")
+    @Html.TextBoxFor(x=>x.City,new{@class="form-control"})
+    <br />
+    <button class="btn btn-info">Müştərini əlavə et</button>
+</form>

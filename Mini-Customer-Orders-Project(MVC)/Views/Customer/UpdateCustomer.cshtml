@@ -1,0 +1,20 @@
+﻿@model Mini_Customer_Orders_Project_MVC_.Entity.Customer
+@{
+    ViewData["Title"] = "UpdateCustomer";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>UpdateCustomer</h1>
+
+<form method="post">
+    @Html.Label("Müştəri id")
+    @Html.TextBoxFor(x=>x.Id,new{@class="form-control"})
+    <br />
+    @Html.Label("Müştəri Adı")
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"})
+    <br />
+    @Html.Label("Müştərinin Şəhəri")
+    @Html.TextBoxFor(x=>x.City,new{@class="form-control"})
+    <br />
+    <button class="btn btn-success">Dəyişdir</button>
+</form>

@@ -1,0 +1,24 @@
+﻿@model Mini_Customer_Orders_Project_MVC_.Entity.Product
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Məhsul dəyişdirmə səhifəsi</h1>
+
+<form method="post">
+    @Html.Label("İd")
+    @Html.TextBoxFor(x=>x.Id,new{@class="form-control"})
+    <br />
+    @Html.Label("Məhsulun adı")
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"})
+    <br />
+    @Html.Label("Qiyməti")
+    @Html.TextBoxFor(x=>x.Price,new{@class="form-control"})
+    <br />
+    @Html.Label("Miqdarı")
+    @Html.TextBoxFor(x=>x.Stock,new{@class="form-control"})
+    <br />
+    <button class="btn btn-success">Dəyişdir</button>
+</form>
+
