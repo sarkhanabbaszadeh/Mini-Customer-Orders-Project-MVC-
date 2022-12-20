@@ -12,8 +12,13 @@ namespace Mini_Customer_Orders_Project_MVC_.Controllers
             var values=context.Customers.ToList(); 
             return View(values);
         }
-
         [HttpGet]
+        public IActionResult AddCustomer()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult AddCustomer(Customer c)
         {
             context.Add(c);
